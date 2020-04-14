@@ -1,0 +1,46 @@
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        /* negative value is to the left side */
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        /* exaclty the way it looks like now */
+        transform: translate(0)
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        /* negative value is to the left side */
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        /* exaclty the way it looks like now */
+        transform: translate(0)
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        /* negative value is to the left side */
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        /* exaclty the way it looks like now */
+        transform: translate(0)
+    }
+}
