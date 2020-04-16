@@ -1,4 +1,5 @@
 .btn {
+    &,
     &:link,
     &:visited {
     font-size: 1.6rem;
@@ -11,7 +12,7 @@
     position: relative;
     }
 
-    &:hover {
+    &:hover{
         /* to go up we use negative */
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black,0.2);
@@ -22,7 +23,9 @@
         } 
     }
 
-    &:active {
+    &:active,
+    &:focus  {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
     }
